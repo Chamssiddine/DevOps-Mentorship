@@ -4,7 +4,7 @@ The process of re-designing the architecture of an application based on more mod
 Rearchitecting can be confused with refactoring, which is simply the rewriting of parts of an application within the existing application architecture.
 # Reasons to Re-Architect Applications for the Cloud
 
-Reduce Costs of Ownership. Large applications often cost too much when running on legacy hardware-based infrastructure, especially when the requirement to scale-out elasticity can be more easily provided by the cloud.
-Drive Agility. Traditional IT includes configuring servers, databases, and networking, all while ensuring end-to-end security. Developers typically have to wait for environments to be provisioned
-Achieve Application Resilience. Monolithic applications are notorious when dealing with failures and issues – typically, any issue in any part of the application sets off a domino effect that takes down the entire app. Instead, fault tolerance can be built into each microservice.
-Enable Scalability.  Unable to scale on-premise instances fast enough, large technology companies like Google, Microsoft, Facebook and Amazon began migrating to the cloud over a decade ago and have since achieved true “web-scale” including elasticity and enormous horizontal resource scaling
+- Reduce Costs of Ownership. Large applications often cost too much when running on legacy hardware-based infrastructure, especially when the requirement to scale-out elasticity can be more easily provided by the cloud.
+- Drive Agility. Traditional IT includes configuring servers, databases, and networking, all while ensuring end-to-end security. Developers typically have to wait for environments to be provisioned
+- vAchieve Application Resilience. Monolithic applications are notorious when dealing with failures and issues – typically, any issue in any part of the application sets off a domino effect that takes down the entire app. Instead, fault tolerance can be built into each microservice.
+- Enable Scalability.  Unable to scale on-premise instances fast enough, large technology companies like Google, Microsoft, Facebook and Amazon began migrating to the cloud over a decade ago and have since achieved true “web-scale” including elasticity and enormous horizontal resource scaling
