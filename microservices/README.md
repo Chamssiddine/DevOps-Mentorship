@@ -25,3 +25,15 @@ There are other Rs for migrating applications to the cloud, but the terms often 
 8- Reimagine: Legacy application is transformed to target technology.
 9- Retool: Also called Conversion, this involves mapping an application transformation journey with one or more strategies.
 
+# Recognizing the right time to rearchitect
+If your company is transitioning from a traditional monolithic architecture or looking to enhance features, scalability and overall performance in ways not supported by the application’s current environment, rearchitecting is likely your best option.
+Rearchitecting entails the most complex process with more steps than any other method. But the benefits (when executed successfully) easily justify the investment.
+
+# Benefits of re-architecting applications for the cloud
+Supplementary business: Aligning the changes to business transformations provides clients to leverage the makeover to align with new business prospects and supplementary revenue streams.
+Reduced cost of ownership: Large applications run on legacy-based hardware infrastructure are expensive. Reducing large infrastructure costs is no small thing for companies considering rearchitecting applications for the cloud, where they can be more affordably operated and scaled.
+Increased agility and scalability: Cloud-native applications are highly adaptable by nature. When you migrate entire applications to the cloud, they automatically become more agile, thanks to microservices models that enable CI/CD pipelines and easily updated functionality to meet end-user needs.
+Better resilience: Monolithic applications are at risk of app-wide failure every time one component breaks. Cloud-native microservices isolate faults so that your applications are more resilient and can operate even as developers address bugs and other issues.
+Sophisticated security: It’s true that security can be complex for cloud-native applications, but when executed correctly, they also have important benefits such as better visibility and monitoring.
+
+
