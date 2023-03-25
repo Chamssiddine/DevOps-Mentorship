@@ -30,10 +30,18 @@ If your company is transitioning from a traditional monolithic architecture or l
 Rearchitecting entails the most complex process with more steps than any other method. But the benefits (when executed successfully) easily justify the investment.
 
 # Benefits of re-architecting applications for the cloud
-Supplementary business: Aligning the changes to business transformations provides clients to leverage the makeover to align with new business prospects and supplementary revenue streams.
-Reduced cost of ownership: Large applications run on legacy-based hardware infrastructure are expensive. Reducing large infrastructure costs is no small thing for companies considering rearchitecting applications for the cloud, where they can be more affordably operated and scaled.
-Increased agility and scalability: Cloud-native applications are highly adaptable by nature. When you migrate entire applications to the cloud, they automatically become more agile, thanks to microservices models that enable CI/CD pipelines and easily updated functionality to meet end-user needs.
-Better resilience: Monolithic applications are at risk of app-wide failure every time one component breaks. Cloud-native microservices isolate faults so that your applications are more resilient and can operate even as developers address bugs and other issues.
-Sophisticated security: It’s true that security can be complex for cloud-native applications, but when executed correctly, they also have important benefits such as better visibility and monitoring.
+. Supplementary business: Aligning the changes to business transformations provides clients to leverage the makeover to align with new business prospects and supplementary revenue streams.
+. Reduced cost of ownership: Large applications run on legacy-based hardware infrastructure are expensive. Reducing large infrastructure costs is no small thing for companies considering rearchitecting applications for the cloud, where they can be more affordably operated and scaled.
+. Increased agility and scalability: Cloud-native applications are highly adaptable by nature. When you migrate entire applications to the cloud, they automatically become more agile, thanks to microservices models that enable CI/CD pipelines and easily updated functionality to meet end-user needs.
+. Better resilience: Monolithic applications are at risk of app-wide failure every time one component breaks. Cloud-native microservices isolate faults so that your applications are more resilient and can operate even as developers address bugs and other issues.
+. Sophisticated security: It’s true that security can be complex for cloud-native applications, but when executed correctly, they also have important benefits such as better visibility and monitoring.
+
+# Challenges to consider
+
+Rearchitecting does have challenges that should be carefully considered:
+- Cost: While it’s true that rearchitecting yields cost savings over time, the initial financial investment is substantial.
+- Expertise and experience: Rearchitecting requires high-level DevOps skills and expert code knowledge. Developer teams not versed in cloud-native practices will encounter frustration and likely make missteps that could adversely affect the process. Companies without the internal experience and expertise to execute should consider hiring consultants who can help.
+- Time: Rearchitecting is not an overnight process. Companies with urgent migration needs may want to consider using other “R” methods for time-sensitive migrations rather than rushing the rearchitecting process.
+
 
 
