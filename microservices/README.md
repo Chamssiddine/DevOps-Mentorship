@@ -25,6 +25,8 @@ There are other Rs for migrating applications to the cloud, but the terms often 
 8- Reimagine: Legacy application is transformed to target technology.
 9- Retool: Also called Conversion, this involves mapping an application transformation journey with one or more strategies.
 
+ ![Alt text](/home/devops/Documents/DevOps-Mentorship/microservices "re")
+
 # Recognizing the right time to rearchitect
 If your company is transitioning from a traditional monolithic architecture or looking to enhance features, scalability and overall performance in ways not supported by the application’s current environment, rearchitecting is likely your best option.
 Rearchitecting entails the most complex process with more steps than any other method. But the benefits (when executed successfully) easily justify the investment.
