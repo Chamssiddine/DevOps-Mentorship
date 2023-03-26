@@ -24,6 +24,7 @@ MACHINES= [
   { name: "jenkins"   , ip: ip(134), primary: false, cpus: 2, mem: NODE_RAM  , add_disk: ADD_DISK_FLAG, size: DISK_SIZE },
   # { name: "nexus"   , ip: ip(135), primary: false, cpus: 2, mem: NODE_RAM  , add_disk: ADD_DISK_FLAG, size: DISK_SIZE },
   # { name: "sonar"   , ip: ip(136), primary: false, cpus: 2, mem: NODE_RAM  , add_disk: ADD_DISK_FLAG, size: DISK_SIZE },
+  
 ]
 
 
