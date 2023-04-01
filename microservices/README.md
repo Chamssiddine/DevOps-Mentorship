@@ -12,7 +12,7 @@ Rearchitecting can be confused with refactoring, which is simply the rewriting o
 
 # What other options are available?
 What other options are available?
- 
+ ![plot](re.png)
 There are other Rs for migrating applications to the cloud, but the terms often used interchangeably can be confusing. Let’s clarify what the other Rs entail (and how they’re different from rearchitecting).
  
 1- Reengineer: Rearchitect and reengineer application with new functionality and integrations.
