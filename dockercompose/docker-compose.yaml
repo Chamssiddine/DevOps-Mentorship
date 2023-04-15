@@ -12,6 +12,9 @@ services:
       - ~/jenkins_home:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
       - /usr/local/bin/docker:/usr/local/bin/docker
+    networks:
+        devops:
+          ipv4_address: 172.18.8.2
   nexus:
      image: sonatype/nexus3
      privileged: true
@@ -21,6 +24,9 @@ services:
       - "~/nexus-data:/nexus-data"
      ports:
       - "8082:8081"
+     networks:
+        devops:
+          ipv4_address: 172.18.8.5
   sonarqube:
     image: sonarqube
     container_name: sonarqube
@@ -32,6 +38,9 @@ services:
       - sonarqube_conf:/opt/sonarqube/conf
       - sonarqube_data:/opt/sonarqube/data
       - sonarqube_extensions:/opt/sonarqube/extensions
+    networks:
+        devops:
+          ipv4_address: 172.18.8.4
   db:
      image: postgres
      environment:
@@ -40,6 +49,9 @@ services:
      volumes:
       - postgresql:/var/lib/postgresql
       - postgresql_data:/var/lib/postgresql/data
+     networks:
+        devops:
+          ipv4_address: 172.18.8.3
 volumes:
   nexus-data: {}
   jenkins-data: {}
@@ -49,3 +61,9 @@ volumes:
   sonarqube_extensions: {}
   postgresql: {}
   postgresql_data: {}
+networks:
+  devops:
+    driver: bridge
+    ipam:
+      config:
+        -  subnet: 172.18.8.0/24
