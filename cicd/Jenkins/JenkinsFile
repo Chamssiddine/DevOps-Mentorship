@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+
+stages {
+    stage("clone code") {
+        steps {
+            script {
+                // let's clone the source
+            sh "git clone https://github.com/Chamssiddine/DevOps-Mentorship.git"
+                
+            }
+        }
+    }
+
+
+    stage("Test") {
+        steps {
+            script {
+                // let's clone the source
+            sh "echo testing... "
+                
+            }
+        }
+    }
+
+    stage("Build code") {
+        steps {
+            // let's clone the source
+            
+            script {
+                sh "echo builiding .... "
+            }
+        }
+    }
+ }
+}
