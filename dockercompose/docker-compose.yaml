@@ -27,6 +27,23 @@ services:
      networks:
         devops:
           ipv4_address: 172.18.8.5
+  gitlab:
+    image:  'gitlab/gitlab-ce:14.7.6-ce.0'
+    container_name: gitlab-ce
+    environment:
+      GITLAB_OMNIBUS_CONFIG: 
+         external_url  "http://example.com"
+    ports:
+      - "8083:80"
+      - "443:443"
+      - "7090:22"
+    volumes:
+      - ~/Desktop/cicd/gitlab/config:/etc/gitlab
+      - ~/Desktop/cicd/gitlab/logs:/var/log/gitlab
+      - ~/Desktop/cicd/gitlab/data:/var/opt/gitlab
+    networks:
+       devops:
+             ipv4_address: 172.18.8.9
   sonarqube:
     image: sonarqube
     container_name: sonarqube
