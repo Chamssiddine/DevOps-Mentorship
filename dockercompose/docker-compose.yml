@@ -2,7 +2,8 @@
 version: '3.7'
 services:
   jenkins:
-    image: jenkins/jenkins:2.387.2-lts-jdk11
+   # image: jenkins/jenkins:2.387.2-lts-jdk11
+    image: dockerjenkins:latest
     privileged: true
     user: root
     ports:
@@ -25,9 +26,10 @@ services:
       - "~/nexus-data:/nexus-data"
      ports:
       - "8082:8081"
+      - "8089:8085"
      networks:
       devops:
-           ipv4_address: 172.18.0.6
+           ipv4_address: 172.18.0.8
   sonarqube:
     image: sonarqube
     container_name: sonarqube
@@ -67,7 +69,7 @@ services:
       - ~/Desktop/cicd/gitlab/data:/var/opt/gitlab
     networks:
        devops:
-             ipv4_address: 172.18.0.8
+             ipv4_address: 172.18.0.9
 
 
 volumes:
