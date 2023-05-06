@@ -1,0 +1,54 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+require 'net/ssh'
+require 'yaml'
+
+required_plugins = %w(
+  vagrant-hostmanager
+  vagrant-sshfs
+)
+
+def ip(n)
+  "#{IP_PREFIX}.#{n}"
+end
+
+GB=1024
+
+IP_PREFIX="192.168.56 " # vbox virtual bridge
+NODE_RAM=4096
+DISK_SIZE=20*GB
+ADD_DISK_FLAG=false
+
+MACHINES= [
+  { name: "jenkins"   , ip: ip(134), primary: false, cpus: 2, mem: NODE_RAM  , add_disk: ADD_DISK_FLAG, size: DISK_SIZE },
+  # { name: "nexus"   , ip: ip(135), primary: false, cpus: 2, mem: NODE_RAM  , add_disk: ADD_DISK_FLAG, size: DISK_SIZE },
+  # { name: "sonar"   , ip: ip(136), primary: false, cpus: 2, mem: NODE_RAM  , add_disk: ADD_DISK_FLAG, size: DISK_SIZE },
+  
+]
+
+
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "bento/ubuntu-18.04"
+
+  MACHINES.each do |m|
+    node = m[:name]
+    config.vm.define node, primary: m[:primary] do |c|
+      c.vm.hostname = "#{node}.example.com"
+      c.vm.network :private_network, :ip => m[:ip]
+      c.hostmanager.aliases = [node]
+
+      c.vm.provider "virtualbox" do |vb|
+        vb.cpus = m[:cpus]
+        vb.memory = m[:mem]
+        
+        add_disk vb, c.vm.hostname, m[:size], 1, 0 if m[:add_disk]
+        # add_disk vb, c.vm.hostname, m[:size], 1, 1 if m[:add_disk]
+      end
+
+    end
+  end
+
+end
+
