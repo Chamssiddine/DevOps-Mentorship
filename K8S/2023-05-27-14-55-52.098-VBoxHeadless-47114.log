@@ -1,0 +1,12 @@
+Log created: 2023-05-27T14:55:52.984129000Z
+Process ID:  47114 (0xb80a)
+Parent PID:  1923 (0x783)
+Executable:  /usr/lib/virtualbox/VBoxHeadless
+Arg[0]: /usr/lib/virtualbox/VBoxHeadless
+Arg[1]: --comment
+Arg[2]: K8S_nodeone_1683971583623_11020
+Arg[3]: --startvm
+Arg[4]: 7a58e2e3-d896-4a1d-943b-a917e2326472
+Arg[5]: --vrde
+Arg[6]: config
+AddRef: illegal refcnt=3221225469 state=2
